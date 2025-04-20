@@ -839,6 +839,37 @@ div#ui-datepicker-div {
 	margin-left: auto;
 }
 
+.work-slider {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	scroll-snap-type: x mandatory;
+  }
+  
+  .work-slider-wrap {
+	display: flex;
+	gap: 20px;
+  }
+  
+  .work-card {
+	flex: 0 0 auto;
+	width: 280px;
+	scroll-snap-align: center;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	background-color: white;
+	text-align: center;
+  }
+  
+  .work-card img {
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	display: block;
+  }
+  
+
 /************************ 13.Inquiry css ***************************/
 .input-wrapper-form {
 	border-radius: 12px;
