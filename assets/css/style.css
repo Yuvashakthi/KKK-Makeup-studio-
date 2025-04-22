@@ -65,6 +65,7 @@ body {
 	margin: 0 auto;
 	height: 100%;
 	background: #000000;
+	
 }
 svg{
 	vertical-align: middle;
@@ -377,7 +378,7 @@ ul{
 	text-align: center;
 	width: 33.33%;
 }
-
+  
 /************************ 6.Product css ***************************/
 .product-slide {
 	border-radius: 12px;
@@ -924,16 +925,18 @@ div#ui-datepicker-div {
   .work-slider-wrap {
 	display: flex;
 	gap: 20px;
+	margin-left:10px;
   }
   
   .work-card {
 	flex: 0 0 auto;
-	width: 280px;
+	width: 315px;
 	scroll-snap-align: center;
 	border-radius: 12px;
 	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 	background-color: white;
 	text-align: center;
+	margin:auto;
   }
   
   .work-card img {
@@ -1584,4 +1587,9 @@ canvas {
 	background-position: center;
 	width: 100%;
 	position: relative;
+}
+@media screen and (width:414px){
+	.work-card img{
+		width:700px !important;
+	}
 }
