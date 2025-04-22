@@ -388,19 +388,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="offer-sec-details container mt-30">
-					<div class="offer-sec">
-						<div class="offer-sec-wrap-bg">
-							<div class="offer-content">
-								<div class="offer-txt">
-									<h2>-25%</h2>
-									<h3 class="mt-15">GET YOUR DISCOUNT</h3>
-									<h4>FOR A FIRST MAKEU</h4>
-								</div>
-							</div>
-						</div>
+				<div class="gallery-sec container mt-30">
+					<div class="makeup-services-top">
+					  <h2 class="mt-5"> Packages</h2>
 					</div>
-				</div>
+				  
+					<div class="work-slider mt-20" data-cursor-text="Drag" data-cursor="sm">
+					  <div class="work-slider-wrap">
+						<div class="work-card">
+							<img src="assets/images/Banner.jpg" style="width:390px;" alt="Work 1">
+						</div>
+				  
+						
+					  </div>
+					</div>
+				  </div>
 				<!-- <div class="product-sec mt-30">
 					<div class="makeup-services-top">
 						<p>High Quality</p>
@@ -599,69 +601,65 @@
 				</div> -->
 				<div class="appointment-sec container">
 					<div class="makeup-services-top">
-						
-						<h2 class="mt-5">Make An Appointment</h2>
+					  <h2 class="mt-5 text-center text-yellow">Make An Appointment</h2>
 					</div>
+					<br>
 					<div class="appointment-sec-bottom mt-20">
-						<form class="appointment-form">
-							<div class="appointment-date">
-								<label class="info-person" for="datepicker">DATE</label>
-								<div class="input-wrapper mt-5">
-									<span ><img class="icon "src="assets/svg/date-icon.svg" alt="date-icon-icon"></span>
-									<input type="text" id="datepicker" class="no-spinners color-black" placeholder="Pick A Date" required>
-								</div>
-							</div>
-							<div class="appointment-date">
-								<label class="info-person" for="datepicker">TIME</label>
-								<div class="input-wrapper mt-5">
-									<span ><img class="icon"src="assets/svg/time-icon.svg" alt="date-icon-icon"></span>
-									<select name="persons" class="custom-select w-100 border-0">
-										<option>09:00 am</option>
-										<option>10:00 am</option>
-										<option>11:00 am</option>
-										<option>12:00 pm</option>
-										<option>01:00 pm</option>
-										<option>02:00 pm</option>
-										<option>03:00 pm</option>
-										<option>04:00 pm</option>
-										<option>05:00 pm</option>
-										<option>06:00 pm</option>
-										<option>07:00 pm</option>
-										<option>08:00 pm</option>
-										<option>09:00 pm</option>
-										<option>10:00 pm</option>
-									</select>
-								</div>
-							</div>
-						</form>
-						<div class="view-product mt-20"> 
-							<a href="javascript:void(0)">Make an Appointment</a>
+					  <form class="appointment-form">
+						<!-- First Row: Name and Phone -->
+						<div class="input-row">
+						  <div class="appointment-field">
+							<label class="info-person" for="name">NAME</label>
+							<input type="text" id="name" name="name" class="input-box" placeholder="Enter Your Name" required>
+						  </div>
+						  
+						  <div class="appointment-field">
+							<label class="info-person" for="datepicker">DATE</label>
+							<input type="date" id="date" name="date" class="input-box" placeholder="Pick A Date" required>
+						  </div>
 						</div>
+				  
+						<!-- Second Row: Date and Time -->
+						<div class="input-row2">
+							<div class="appointment-field1"style="margin-top: -15px;" >
+								<label class="info-person" for="phone">PHONE NUMBER</label>
+								<input type="text" id="phone" name="phone" class="input-box" placeholder="Enter Your Phone No" required>
+							</div>
+							<div class="appointment-field2" >
+								<label class="info-person" for="time">TIME</label>
+								<select id="time" name="time" class="input-box">
+								<option>09:00 am</option>
+								<option selected>10:00 am</option>
+								<option>11:00 am</option>
+								<option>12:00 pm</option>
+								<option>01:00 pm</option>
+								<option>02:00 pm</option>
+								<option>03:00 pm</option>
+								<option>04:00 pm</option>
+								<option>05:00 pm</option>
+								<option>06:00 pm</option>
+								<option>07:00 pm</option>
+								<option>08:00 pm</option>
+								<option>09:00 pm</option>
+								<option>10:00 pm</option>
+								</select>
+							</div>
+						</div>
+						
+						
+						
+					  </form>
+					  <div class="view-product mt-20 text-center">
+						<button type="submit" class="appointment-btn">Make an Appointment</button>
+					  </div>
+						
+					  
+				  
+					
 					</div>
-					<!-- <div class="blog-sec  mt-30">
-						<div class="makeup-services-top">
-							<p>Blog</p>
-							<h2 class="mt-5">Recent Fashion News</h2>
-						</div>
-						<div class="blog-bottom-sec mt-20">
-							<div class="blog-content">
-								<div class="blog-img">
-									<img src="assets/images/blog/blog1.png" alt="blog-img" class="w-100">
-								</div>
-								<div class="makeup">
-									<p>MAKEUP</p>
-								</div>
-								<div class="blog-details">
-									<p>20 NOV 2025</p>
-									<h3 class="mt-5">5 Ways to Use Shadow Palette</h3>
-								</div>
-							</div>
-							<div class="view-product mt-20"> 
-								<a href="blog.html">View All Blogs</a>
-							</div>
-						</div>
-					</div> -->
 				</div>
+				  
+			
 				<div class="inquiry-sec container">
 					<div class="makeup-services-top">
 						
@@ -822,7 +820,7 @@
 					<div class="modal-body">
 						<div class="scan-content">
 							<div class="scanner">
-								<img src="assets/images/main-img/scanner-img.png" alt="scanner-img" class="">
+								<img src="assets/images/qr_download.png" alt="scanner-img" class="">
 							</div>
 							<div class="scan-txt mt-20">
 								<p>Scan me</p>
@@ -830,10 +828,10 @@
 						</div>
 						<div class="qr-btn mt-30">
 							<div class="btn1">
-								<a href="javascript:void(0)">Download</a>
+								<a href="javascript:void(0)"  onclick="downloadImage()">Download</a>
 							</div>
 							<div class="btn1">
-								<a href="javascript:void(0)">Share</a>
+								<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#share-media-modal">Share</a>
 							</div>
 						</div>
 					</div>
@@ -916,6 +914,7 @@
 			</div>
 		</div>
 		<!-- Work modal end -->
+		
 	</div>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/slick.min.js"></script>
@@ -931,5 +930,45 @@
 			$('.price-bottom-wrap .price-content, .work-bottom-sec-wrap .work-content').matchHeight();
 		})
 	</script>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script>
+		(function(){
+		  emailjs.init("TN1EN4kEepvU3A8aq"); // Your Public Key
+		})();
+	  
+		const form = document.querySelector('.appointment-form');
+		const submitBtn = document.querySelector('.appointment-btn');
+	  
+		// Trigger send manually when button clicked
+		submitBtn.addEventListener('click', function(e) {
+		  e.preventDefault();
+	  
+		  if (form.checkValidity()) {
+			// Send Email via EmailJS
+			emailjs.sendForm('service_ht5s6pq', 'template_up7efke', form)
+			.then(function() {
+			  alert('Appointment request sent successfully!');
+			  form.reset(); // optional: reset after submission
+			}, function(error) {
+			  alert('Failed to send appointment. Error: ' + JSON.stringify(error));
+			});
+		  } else {
+			form.reportValidity(); // This will show validation errors
+		  }
+		});
+	  </script>
+	  <script>
+		function downloadImage() {
+			const imageUrl = "assets/images/main-img/scanner-img.png";
+
+			const a = document.createElement("a");
+			a.href = imageUrl;
+			a.download = "scanner-img.png"; 
+			document.body.appendChild(a);
+			a.click();
+			document.body.removeChild(a);
+		}
+	  </script>
+	  
 </body>
 </html>
