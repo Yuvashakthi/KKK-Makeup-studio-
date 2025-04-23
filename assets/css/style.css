@@ -309,6 +309,8 @@ ul{
 }
 .services-img img {
 	border-radius: 6px;
+	width:145px;
+	height:200px;
 }
 
 .work-content img {
