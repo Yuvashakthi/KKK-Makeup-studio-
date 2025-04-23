@@ -665,36 +665,36 @@
 						
 						<h2 class="mt-5">Inquiries</h2>
 					</div>
-					<form class="inquiry-form">
+					<form class="inquiry-form" id="inquiry-form">
 						<div>
 							<label class="info-person mt-15" for="username">Your Name</label>
 							<div class="input-wrapper-form mt-10">
 								<span class="icon"><img src="assets/images/inquery/person-icon.svg" alt="person-icon" class="brown-color"></span>
-								<input type="text" id="username" placeholder="Your Name" autocomplete="off">
+								<input type="text" id="username" name="username" placeholder="Your Name">
 							</div>
 						</div>
 						<div>
 							<label class="info-person mt-15" for="phone-number">Enter Phone Number</label>
 							<div class="input-wrapper-form mt-10">
 								<span class="icon"><img src="assets/images/inquery/call-icon.svg" alt="person-icon" class="brown-color"></span>
-								<input type="tel" id="phone-number" placeholder="Your Phone Number" autocomplete="off">
+								<input type="tel" id="phone-number" name="phone-number" placeholder="Your Phone Number">
 							</div>
 						</div>
 						<div>
 							<label class="info-person mt-15" for="email">Email Address</label>
 							<div class="input-wrapper-form mt-10">
 								<span class="icon"><img src="assets/images/inquery/mail-icon.svg" alt="person-icon" class="brown-color"></span>
-								<input type="text" id="email" placeholder="Your Email Address" autocomplete="off">
+								<input type="text" id="email" name="email" placeholder="Your Email Address">
 							</div>
 						</div>
 						<div>
 							<label class="info-person mt-15" for="email">your message</label>
 							<div class="input-wrapper-form textarea-txt mt-10">
-								<textarea rows="4" cols="50" placeholder="Type a message here..." class="custom-textarea border-0" id="textarea"></textarea>
+								<textarea id="textarea" name="textarea"  style="border:none;" rows="4" cols="50" placeholder="Type a message here..."></textarea>
 							</div>
 						</div>
-						<div class="view-product mt-20"> 
-							<a href="javascript:void(0)">Send Message</a>
+						<div class="view-product mt-20 text-center"> 
+							<button type="submit" class="appointment-btn" >Send Message</button>
 						</div>
 					</form>
 				</div>
@@ -956,8 +956,8 @@
 			form.reportValidity(); // This will show validation errors
 		  }
 		});
-	  </script>
-	  <script>
+	</script>
+	<script>
 		function downloadImage() {
 			const imageUrl = "assets/images/main-img/scanner-img.png";
 
@@ -968,7 +968,36 @@
 			a.click();
 			document.body.removeChild(a);
 		}
-	  </script>
-	  
+	</script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+	<script type="text/javascript">
+	  (function(){
+		  emailjs.init("TN1EN4kEepvU3A8aq"); // Replace with your actual public key from EmailJS
+	  })();
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+		document.getElementById('inquiry-form').addEventListener('submit', function (event) {
+			event.preventDefault();
+		
+			emailjs.sendForm('service_yzg664e', 'template_5tke80m', this)
+			.then(function () {
+				alert('Message sent successfully!');
+			}, function (error) {
+				alert('Failed to send the message, please try again.');
+				console.log('FAILED...', error);
+			});
+		});
+		});
+	</script>
+	
+
+
+	
+	
+
+		
 </body>
 </html>
